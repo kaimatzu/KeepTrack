@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="5dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buttonWeekly"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/round_background"
+        android:clickable="true"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="Weekly"
+        android:textColor="@color/theme_white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/list_item"
+        app:layout_constraintStart_toEndOf="@+id/detailsText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/buttonDaily"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/round_background"
+        android:clickable="true"
+        android:fontFamily="@font/comfortaa_bold"
+        android:gravity="center"
+        android:text="Daily"
+        android:textColor="@color/theme_white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/list_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/buttonWeekly"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    "
+
+</androidx.constraintlayout.widget.ConstraintLayout>
